@@ -28,8 +28,8 @@ curl -s -X POST localhost:8080/carts/demo/total \
 ```
 
 - `items[]` — sku, unitPrice, quantity (validated with Bean Validation)
-- `region` — tax region understood by `TaxRules` (`US-CA`, `US-NY`, `EU-DE`, `UK`, …)
-- `promoCode` — optional; resolved by `PromoCatalog` (`WELCOME10` = 10 %, `FIVEOFF` = $5, …); unknown codes are ignored
+- `region` — tax region understood by `TaxRules` (`US-CA`, `US-NY`, `US-TX`, `US-OR`, `GB`, `DE`)
+- `promoCode` — optional; resolved by `PromoCatalog` (`WELCOME10` = 10 %, `SAVE5` = $5 off, `HALFOFF` = 50 %); unknown codes are ignored
 
 ## Code map
 
